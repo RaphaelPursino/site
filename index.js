@@ -13,3 +13,9 @@ const checkboxes = () => {
 
 window.addEventListener('scroll', checkboxes)
 checkboxes()
+
+const img = document.querySelector('.img')
+
+img.addEventListener('onfocus', function(img) {
+    img.style.display = "none"
+})

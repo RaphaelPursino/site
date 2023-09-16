@@ -200,6 +200,7 @@ ul li img {
 @media screen and (max-width: 1000px) {
     .container {
         flex-direction: column;
+        overflow-x: hidden;
     }
 
     .left, .right {
@@ -229,8 +230,8 @@ ul li img {
     }
     
     .social svg {
-        width: 1rem;
-        height: 1rem;
+        width: 1.5rem;
+        height: 1.5rem;
     }
 
     .img, .overlay {
@@ -274,6 +275,7 @@ ul li img {
 
     body {
         overflow-x: hidden;
+        background-repeat: no-repeat;
     }
 
     ul:hover li {
