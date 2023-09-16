@@ -16,6 +16,6 @@ checkboxes()
 
 const img = document.querySelector('.img')
 
-img.addEventListener('onfocus', function(img) {
+img.addEventListener('onmousedown', function(img) {
     img.style.display = "none"
 })
