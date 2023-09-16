@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@200;300;400;500;700&family=Noto+Sans+Display:wght@100;200;300;400;500;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(to right bottom, #393939, #2c2c2c, #1f1f1f, #131313, #000000);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    font-family: 'Noto Sans Display', sans-serif;
+}
+
+.container {
+    display: flex;
+    max-width: 70rem;
+    justify-content: center;
+}
+
+.left {
+    position: sticky;
+    top: 0;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 7rem 4rem;
+    user-select: none;
+    
+}
+
+.left, .right {
+    width: 50%;
+}
+
+.left h1 {
+    font-size: 3rem;
+    color: white;
+    font-weight: 700;
+    letter-spacing: -0.1rem;
+}
+
+.left p {
+    font-size: 2rem;
+    margin-bottom: 5rem;
+    color: white;
+    font-weight: 400;
+    letter-spacing: -0.1rem;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5rem;
+}
+
+.links spam {
+    margin-bottom: 1rem;
+}
+
+.links spam a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.social a {
+    margin-right: 2rem;
+    text-decoration: none;
+}
+
+.social svg:hover {
+    opacity: 0.5;
+    transition: opacity 0.3s;
+}
+
+.right {
+    padding: 4rem 1rem;
+}
+
+.aboutme {
+    margin-bottom: 5rem;
+    user-select: none;
+}
+
+.right p {
+    color: white;
+}
+
+.img {
+    background-image: url(img/embaçado1.png);
+    width: 20rem;
+    height: 20rem;
+    background-size: cover;
+    margin: 2rem auto;
+    position: relative;
+}
+
+.overlay {
+    background-image: url(img/foto.png);
+    background-size: cover;
+    width: 20rem;
+    height: 20rem;
+    opacity: 0;
+    position: absolute;
+    transition: opacity 0.3s;
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+
+ul {
+    list-style: none;
+}
+
+.project-1, .project-2, .project-3, .project-4 {
+    display: flex;
+    align-items: center;
+}
+
+.project-1-titles, .project-2-titles, .project-3-titles, .project-4-titles {
+    margin: 1rem;
+}
+
+ul h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+ul:hover li {
+    filter: blur(3px);
+}
+
+ul li {
+    margin-bottom: 5rem;
+    transition: transform 300ms ease-out, box-shadow 300ms ease-out;
+    user-select: none;
+}
+
+ul li:hover {
+    background-color: rgba(255, 255, 255, 0.027);
+    transform: scale(1.1);
+    border-radius: 1rem;
+    box-shadow: 0px 0px 13px 19px rgba(0, 0, 0, 0.1);
+    filter: blur(0px);
+}
+
+ul li img {
+    width: 14rem;
+    height: 9rem;
+    border-radius: 1rem;
+    margin: 1rem;
+}
+
+.all-projects {
+    padding: 1rem;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contacts h2 {
+    text-align: center;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.contacts svg {
+    margin-right: 1rem;
+}
+
+.contacts svg:hover {
+    opacity: 0.5;
+    transition: opacity 0.3s;
+}
+
+.mail, .whatsapp {
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+}
