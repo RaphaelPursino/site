@@ -30,7 +30,6 @@ body {
     justify-content: space-between;
     padding: 7rem 4rem;
     user-select: none;
-    
 }
 
 .left, .right {
@@ -188,4 +187,118 @@ ul li img {
     display: flex;
     align-items: center;
     margin: 1rem;
+}
+
+.aboutme-mobile {
+    display: none;
+}
+
+.projects-mobile {
+    display: none;
+}
+
+@media screen and (max-width: 1000px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .left, .right {
+        width: auto;
+    }
+
+    .left {
+        position: relative;
+        padding: 2rem;
+    }
+
+    .left h1 {
+        font-size: 2.3rem;
+    }
+
+    .left p {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .links {
+        display: none;
+    }
+
+    .social a {
+        margin-right: 1rem;
+    }
+    
+    .social svg {
+        width: 1rem;
+        height: 1rem;
+    }
+
+    .img, .overlay {
+        width: 15rem;
+        height: 15rem;
+    }
+
+    .right {
+        padding: 0 1rem;
+    }
+
+    .aboutme {
+        padding: 0 1rem;
+    }
+
+    .project-1, .project-2, .project-3, .project-4 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .project-1, .project-3 {
+        flex-direction: column-reverse;
+    }
+
+    ul li {
+        margin-bottom: 2rem;
+    }
+
+    .aboutme-mobile {
+        display: block;
+        color: white;
+        text-align: center;
+    }
+
+    .projects-mobile {
+        display: block;
+        color: white;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    ul:hover li {
+        filter: none;
+    }
+
+    ul li {
+        transition: transform 300ms ease-out, box-shadow 300ms ease-out;
+    }
+
+    ul li:hover {
+        transform: scale(1.0);
+        transition: none;
+    }
+
+    .box {
+        transform: translateX(400%);
+        transition: transform 0.8s ease;
+    }
+
+    .box:nth-of-type(even) {
+        transform: translateX(-400%);
+    }
+
+    .box.show {
+        transform: translateX(0);
+    }
 }
