@@ -13,9 +13,3 @@ const checkboxes = () => {
 
 window.addEventListener('scroll', checkboxes)
 checkboxes()
-
-const img = document.querySelector('.img')
-
-img.addEventListener('ontouchmove', function(img) {
-    img.style.display = "none"
-})
