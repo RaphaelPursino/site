@@ -1,0 +1,92 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(to right bottom, #393939, #2c2c2c, #1f1f1f, #131313, #000000);
+    min-height: 100vh;
+    font-family: 'Noto Sans Display', sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.table ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+.allprojects-header {
+    margin-top: 6rem;
+}
+
+.allprojects-header a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 0.877);
+}
+
+.allprojects-header h1 {
+    font-size: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+    letter-spacing: 0.5rem;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.877);
+}
+
+table {
+    border-spacing: 10rem 2rem;
+    margin-bottom: 5rem;
+}
+
+.table td {
+    border-bottom: 2px solid rgba(77, 76, 76, 0.5);
+    text-align: center;
+}
+
+.table a {
+    color: white;
+    text-decoration: none;
+}
+
+.table li {
+    background-color: rgba(77, 76, 76, 0.5);
+    padding: 0.6rem;
+    border-radius: 2rem;
+    margin-right: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+th {
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width: 800px) {
+    .allprojects-header a {
+        font-size: 1rem;
+    }
+
+    .allprojects-header h1 {
+        font-size: 1.5rem;
+        margin-top: 0.5rem;
+        margin-bottom: 2rem;
+        letter-spacing: 0.1rem;
+    }
+
+    .none-mobile {
+        display: none;
+    }
+
+    table {
+        border-spacing: 3rem 2rem;
+        margin-bottom: 3rem;
+    }
+}
