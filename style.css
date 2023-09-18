@@ -172,6 +172,10 @@ ul li img {
     padding: 1rem;
 }
 
+.allprojects-link {
+    text-decoration: none;
+}
+
 .contacts {
     display: flex;
     flex-direction: column;
@@ -213,6 +217,16 @@ ul li img {
     text-align: center;
     margin-bottom: 2rem;
     font-size: 1.5rem;
+}
+
+.link {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.box a {
+    text-decoration: none;
 }
 
 @media screen and (max-width: 1000px) {
